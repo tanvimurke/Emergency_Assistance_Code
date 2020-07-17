@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Emergency Assistance Code</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mysheet.css">
+    </head>
+    <body>
+        <h1> EMERGENCY ASSISTANCE CODE </h1>
+        <p> Hello Friends, we are here to help you- if you meet with an accident(we really hope you don't)
+            but you never know so we will assist you during the accident. </p>
+        <p> How Emergency Assistance Code works? <br>
+            You will enter all the details in the form below which will then generate a qrcode. 
+            We provide with the best material to print this qrcode which will not damage in any condition.
+            Stick this code to your vehicle, anyone can scan(using camscanner,qrcode scanner,normal camera of latest mobiles)
+            this code and get your medical details which will help you in emergency. </p>
+        
+       <form action="qrservlet" method="post">
+           <div class="title">	
+           <br><br>Enter your details to create QR Code
+           <p>Note: Once the details are entered in a qrcode, it cannot be changed.For any privacy issues, please contact us.</p>
+           </div>
+          
+           <div class="form"> 
+               NAME* : <input type="text" name="name" placeholder="Full Name" size="35" required>
+                <br><br>
+                BLOOD GROUP* : <input type="text" name="bg" placeholder="Blood Group" required>
+		<br><br>
+                
+                EMERGENCY CONTACT NO.1* : <input type="number" name="en1" placeholder="Emergency contact 1" required>
+                <br><br>
+                
+                EMERGENCY CONTACT NO.2* : <input type="number" name="en2" placeholder="Emergency contact 2" required>
+                <br><br>
+                
+                EMERGENCY CONTACT NO.3* : <input type="number" name="en3" placeholder="Emergency contact 3" required>
+                <br><br>
+                
+                HEALTH INSURANCE (IF ANY) : <input type="text" name="hins" placeholder="Health insurance" size="25">
+                 <br><br>
+                
+                 HEALTH ISSUES OR ALLERGIES* : <input type="text" name="alrgy" placeholder="Health Issues or Allergies" size="25" required>
+                 <br><br>
+                 
+                <input type="submit" value="Generate QR Code" >
+                </div>
+  
+                </form>
+        <p> Don't forget to stick this code to your vehicle. BE SAFE! </p>
+    </body>
+</html>
